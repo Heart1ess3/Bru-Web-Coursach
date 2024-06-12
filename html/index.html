@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Health</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylewindows.css">
+</head>
+<body>
+   <!--<header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <nav class="menulogo_nav">
+                    <ul class="menulogo_list">
+                        <li class="menulogo_item">
+                            <a href="" class="header_logo_link">
+                                <img src="/img/svg/menu.svg" alt="" class="header_menu_pic">
+                            </a>
+                        </li>
+                        <li class="menulogo_item">
+                            <a href="" class="header_logo_link">
+                                <img src="/img/svg/logo.svg" alt="" class="header_logo_pic">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>                           
+
+                    <nav class="header_nav">
+                        
+                        <ul class="header_list">
+                            
+                            <li class="header_item">
+                                <a href="" class="header_link">Sign In</a>
+                            </li>
+                            <li class="header_item">
+                                <a href="" class="header_link">Log In</a>
+                            </li>
+                            <li class="header_item">
+                                <div class="changeLang">en</div>
+                            </li>
+                            <li class="header_item">
+                                <a href="../html/howitworks.html" class="header_link">How it works</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>-->
+    <header>
+        <div class="container">
+            <div class="koala">
+                <img class="header_logo_pic" src="../img/svg/logo.svg" alt="logo">
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#Products" data-i18="1">Products</a>
+                        </li>
+                        <li>
+                            <a href="../html/howitworks.html" data-i18="2">How it works</a>
+                        </li>
+                        <li>
+                            <a href="../html/forsponsors.html" data-i18="3">For Sponsors</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <div class="authorization">
+                    <span class="logout hidden" data-i18="54">Logout</span>
+                    <span class="logIn" data-i18="55">Log in</span>
+                    <span class="sighIn" data-i18="56">Sign in</span>
+                </div>
+                <div class="changeTheme">
+                    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3.5C13.5899 3.5 16.5 6.41015 16.5 10C16.5 13.5899 13.5899 16.5 10 16.5V3.5ZM10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2Z" fill="#212121"/>
+                    </svg>                        
+                </div>
+                <div class="changeLang">en</div>
+                <button class="search" data-i18="4">Search for products</button>
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="burger_menu">
+            <nav class="burger_menu_links">
+                <ul>
+                    <li class="nav_item logout_burger hidden">
+                        <span class="nav_items_text" data-i18="54">Logout</span>
+                    </li>
+                    <li class="nav_item logIn_burger">
+                        <span class="nav_items_text" data-i18="55">Log in</span>
+                    </li>
+                    <li class="nav_item sighIn_burger">
+                        <span class="nav_items_text" data-i18="56">Sign in</span>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_items_text" href="#Products" data-i18="1">Products</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_items_text" href="../html/howitworks.html" data-i18="2">How it works</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_items_text" href="../html/forsponsors.html" data-i18="3">For Sponsors</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="pagination-section hidden">
+        <div class="container">
+            <h1 class="title">Birthday greetings!</h1>
+            <div class="posts"></div>
+            <div class="pagination"></div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="intro">
+            <div class="intro_wrap">
+                <div class="intro_img">
+                    <img src="../img/jpg/intro.jpg" alt="" class="intro_pic">
+                </div>
+                    <div class="intro_title_right-text">
+                        <div class="intro_text_title">
+                            <h1 data-i18="7" class="intro_text_title_h">Pet medication made easy</h1>
+                        </div>
+                        <div class="inro_text_undertitle">
+                            <h3 data-i18="104" class="intro_text_undertitle_h3">Koala has all the medications and health products your pet needs. We package them by date and time to make pet care simpler. The best part? There are no service or shipping fees — you only pay for what your pet needs.</h3>
+                        </div>
+                        <div class="button_shop_pet">
+                            <button data-i18="9" type="button" class="button_shop_pet_pic" >Shop for your pet →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablets">
+                <div class="tablets_wrap">
+                    <div class="tablets_text">
+                        <div class="tablets_text_title">
+                            <h2 data-i18="10" class="tablets_text_title_h2">All their meds, sorted and delivered. We will:</h2>
+                        </div>
+                    </div>
+                    <ul class="tablets_list">
+                        <li class="tablets_item">
+                            <div class="tabletsnum green">
+                                <button class="button_circle green"><h3 class="button_text white">1</h3></button>
+                                <div class="tablet_text_container">
+                                    <h3 data-i18="11" class="tablet_text">Verify & fetch</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tablets_item">
+                            <div class="tabletsnum white">
+                                <button class="button_circle white"><h3 class="button_text black">2</h3></button>
+                                <div class="tablet_text_container">
+                                    <h3 data-i18="12"  class="tablet_text">Sort & package</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tablets_item">
+                            <div class="tabletsnum white">
+                                <button class="button_circle white"><h3 class="button_text black">3</h3></button>
+                                <div class="tablet_text_container">
+                                    <h3 data-i18="13"  class="tablet_text">Deliver and refill</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tablets_item">
+                            <div class="tablets_link">
+                                <a href="" class="tablets_link_text">
+                                    <h3 data-i18="14" class="tablet_text underline">See how it works</h3>
+                                </a>
+                            </div>
+                            <div class="tablet_underline"></div>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="tablets_img">
+                    <img src="../img/svg/tablets.svg" alt="" class="tablets-pic">
+                </div>
+            </div>
+            <div class="get_started">
+               <h3 data-i18="15" class="get_started_text">Get started.</h3> 
+            </div>
+            
+        </main>
+        <div class="shop">
+            <div class="shop_wrapper">
+                <div class="shop_title_text">
+                    <h2 data-i18="16" class="shop_trusted_text">Shop trusted products.</h2>
+                    <h3 data-i18="17"  class="shop_undertitle_text">Vet-approved meds, supplements and health products. Sorted and delivered for free.</h3>
+                </div>
+                <div class="shop_button_title">
+                    <button data-i18="18" class="button_shop">Show all products → </button>
+                </div>
+            </div>
+            <div class="catalog_shop">
+                <div class="catalog_first">
+                    <img src="../img/svg/catalog_first.svg" alt="">
+                    <h2 data-i18="19" class="catalog_text_title first">Simparica TRIO for Dogs</h2>
+                    <button data-i18="20" class="catalog_first_button first">Heartworm</button>
+                    <button data-i18="21" class="catalog_first_button second">Flea & Tick</button>
+                    <button data-i18="22" class="catalog_first_button third">Dewormers & Parasiticides</button>
+                    <h3 data-i18="23" class="catalog_text_underbutton first">A monthly oral medication that prevents heartworm disease, treats and controls certain intestinal parasites, and prevents and treats flea and tick infestations.</h3>
+                    <h4 data-i18="24" class="catalog_lasttext">This item requires a prescription</h4>
+                </div>
+                <div class="catalog_second">
+                    <img src="../img/svg/catalog_second.svg" alt="">
+                    <h2 data-i18="25" class="catalog_text_title second">Apoquel</h2>
+                    <button data-i18="26" class="catalog_first_button fourth">Apoquel's categories are</button>
+                    <h3 data-i18="27" class="catalog_text_underbutton second">Oclacitinib (Apoquel) is used to relieve itching due to a variety of causes including allergy.</h3>
+                    <h4 data-i18="28" class="catalog_lasttext">This item requires a prescription</h4>
+                </div>
+                <div class="catalog_third">
+                    <img src="../img/svg/catalog_third.svg" alt="">
+                    <h2 data-i18="70" class="catalog_text_title third">Rimadyl</h2>
+                    <button data-i18="71" class="catalog_first_button fifth">Rimadyl's categories are</button>
+                    <h3 data-i18="72" class="catalog_text_underbutton third">Carprofen (Rimadyl) is a non-steroidal anti-inflammatory drug (NSAID) used to treat arthritic and post-operative pain and inflammation.</h3>
+                    <h4 data-i18="73" class="catalog_lasttext">This item requires a prescription</h4>
+                </div>
+                <div class="catalog_fourth">
+                    <img src="../img/svg/catalog_fourth.svg" alt="">
+                    <h2 data-i18="74" class="catalog_text_title fourth">Purina Pro Plan FortiFlora Probiotic</h2>
+                    <button data-i18="75" class="catalog_first_button sixth">Vitamins & Supplements</button>
+                    <h3 data-i18="76" class="catalog_text_underbutton fourth">Probiotics supply "good" bacteria to the gut and promote overall digestive health.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="community">
+            <div class="commutity_wrap">
+                <div class="commutity_first-two_img">
+                    <div class="community_first_img_container">
+                        <img src="../img/svg/community_first.svg" alt="" class="community_first_img">
+                        <div class="community_text_underimage">
+                            <h3 data-i18="77" class="community_underimage_text">View Josie's care box</h3>
+                            <button class="community_button_arrow">
+                                <h5 class="arrow">→</h5>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="community_second_img_container">
+                        <img src="../img/svg/community_second.svg" alt="" class="community_second_img">
+                        <div class="community_text_underimage">
+                            <h3 data-i18="78" class="community_underimage_text">View Elijah's care box</h3>
+                            <button class="community_button_arrow">
+                                <h5 class="arrow">→</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-i18="79" class="community_join_text">Join our community of happy pets.</div>
+                <button data-i18="80" type="button" class="button_shop_pet_pic red" >Shop for your pet →</button>
+                <div class="commutity_last-two_img">
+                    <div class="community_third_img_container">
+                        <img src="../img/svg/community_third.svg" alt="" class="community_third_img">
+                        <div class="community_text_underimage">
+                            <h3 data-i18="81" class="community_underimage_text">View Waffles's care box</h3>
+                            <button class="community_button_arrow">
+                                <h5 class="arrow">→</h5>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="community_fourth_img_container">
+                        <img src="../img/svg/community_fourth.svg" alt="" class="community_fourth_img">
+                        <div class="community_text_underimage">
+                            <h3 data-i18="82" class="community_underimage_text">View Liliana's care box</h3>
+                            <button class="community_button_arrow">
+                                <h5 class="arrow">→</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="state">
+            <div class="state_wrap">
+                <div data-i18="83" class="state_title">Coming soon to your state.</div>
+            </div>
+            <div data-i18="84" class="state_undertitle">
+                Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, and Wyoming.
+                <br>
+                Sign up to be notified when we're in your area.
+              </div>
+              <button data-i18="85" class="state_button">Notify Me</button>
+              <img src="../img/svg/states.svg" alt="" class="states_img">
+              <div class="map">
+                  <div class="container">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11794.618662449053!2d-71.06482366295164!3d42.34988546388013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37bcee3b0fbdf%3A0x8f96dca8df15fea1!2sKoala%20Health!5e0!3m2!1sru!2sby!4v1718054941399!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+            </div>
+
+        <footer class="footer">
+            <div class="footer_wrap">
+                <div class="footer_wrap_lists">
+                    <div class="footer_wrap_list1">
+                            <ul class="footer-list1">
+                                <li class="footer-item">
+                                  <div data-i18="86" class="footer-label first">Contact</div>
+                             </li>
+                             <li class="footer-item">
+                                <div class="footer-list1-1">
+                                    <a data-i18="87" href="mailto:hello@koala.health" class="footer-list text1">hello@koala.health</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list1-2">
+                                    <a data-i18="88" href="tel:+18664456252" class="footer-list text2">(866) 445-6252</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list1-3">
+                                    <a data-i18="89" href="#1" class="footer-list td text3">179 South Street</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list1-4">
+                                    <a data-i18="90" href="#1" class="footer-list td text4">Suite 100</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list1-5">
+                                    <a data-i18="91" href="#1" class="footer-list td text5">Boston, MA 02111</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_wrap_list2">
+                        <ul class="footer-list2">
+                            <li class="footer-item">
+                                <div data-i18="92" class="footer-label second">Company</div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list2-1">
+                                    <a data-i18="93" href="#1" class="footer-list text6">How It Works</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list2-2">
+                                    <a data-i18="94" href="#1" class="footer-list text7">Careers</a>
+                                </div>
+                            </li>
+                            <li class="footer-item">
+                                <div class="footer-list2-3">
+                                    <a data-i18="95" href="#1" class="footer-list text8">FAQ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_wrap_list3">
+                        <ul class="footer-list3">
+                            <li class="footer-item">
+                                <div data-i18="96" class="footer-label third">Legal</div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="97" href="#1" class="footer-list text9">Terms of Use</a>
+                                </div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="98" href="#1" class="footer-list text10">Privacy Notice</a>
+                                </div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="99" href="#1" class="footer-list text11">Auto-Refill Terms of Use</a>
+                                </div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="100" href="#1" class="footer-list text12">Billing and Returns Policy</a>
+                                </div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="101" href="#1" class="footer-list text13">State Notices</a>
+                                </div>
+                            </li>
+                            <li class="footer-item3">
+                                <div class="footer-list3">
+                                    <a data-i18="102" href="https://www.google.com/maps/place/Koala+Health/@42.3502978,-71.0576568,15z/data=!4m6!3m5!1s0x89e37bcee3b0fbdf:0x8f96dca8df15fea1!8m2!3d42.3502978!4d-71.0576568!16s%2Fg%2F11sfrqntq6?entry=ttu" class="footer-list text14">We are on the map</a>
+                                </div>
+                            </li>
+                            </ul>
+                            
+                    </div>
+                </div>
+                <div class="footer_down">
+                    <div class="footer_down_wrap">
+                        <div class="footer_down_left">
+                            <div class="footer_down_left_list">
+                                <img src="../img/svg/inst.svg" alt="">
+                                <img src="../img/svg/facebook.svg" alt="">
+                                <img src="../img/svg/twitter.svg" alt="">
+                                <img src="../img/svg/linkedin.svg" alt="">
+                            </div>
+                            <div data-i18="103" class="legal_text"><h3 class="legal">Legal</h3></div>
+                        </div>
+                        <div class="footer_down_center">
+                            <img src="../img/svg/koala_health_logo.svg" alt="">
+                        </div>
+                        <div class="footer_down_right">
+                            <img src="../img/svg/koala.svg" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        
+    <div class="modalRegister_Background modal_background">
+        <div class="modalRegister modal">
+            <div class="content">
+                <form class="form_Register">
+                    <h2 class="header_Registration" data-i18="57">Registration</h2>
+                    <div class="inputWrapper inputNameWrapper">
+                        <input type="text" placeholder="Name" class="inputName" data-i18-placeholder="63">
+                        <div class="mistakeMessage mistakeMessageName"></div>
+                    </div>
+                    <div class="inputWrapper inputSurnameWrapper">
+                        <input type="text" placeholder="Surname" class="inputSurname" data-i18-placeholder="64">
+                        <div class="mistakeMessage mistakeMessageSurname"></div>
+                    </div>
+                    <div class="inputWrapper inputPatronymicWrapper">
+                        <input type="text" placeholder="Patronymic" class="inputPatronymic" data-i18-placeholder="65">
+                        <div class="mistakeMessage mistakeMessagePatronymic"></div>
+                    </div>
+                    <div class="inputWrapper inputBirthdayWrapper">
+                        <input type="text" placeholder="Birthday" class="inputBirthday" data-i18-placeholder="66">
+                        <div class="mistakeMessage mistakeMessageBirthday"></div>
+                    </div>
+                    <div class="inputWrapper inputNumberWrapper">
+                        <input type="text" placeholder="Number" class="inputNumber" data-i18-placeholder="67">
+                        <div class="mistakeMessage mistakeMessageNumber"></div>
+                    </div>
+                    <div class="inputWrapper inputEmailWrapper">
+                        <input type="text" placeholder="Email" class="inputEmail">
+                        <div class="mistakeMessage mistakeMessageEmail"></div>
+                    </div>
+                    <div class="inputWrapper inputPasswordWrapper">
+                        <div class="container">
+                            <input type="text" placeholder="Password" class="inputPassword" data-i18-placeholder="68">
+                            <div class="generatePassword">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 4V2" />
+                                    <path d="M15 16v-2" />
+                                    <path d="M8 9h2" />
+                                    <path d="M20 9h2" />
+                                    <path d="M17.8 11.8 19 13" />
+                                    <path d="M15 9h0" />
+                                    <path d="M17.8 6.2 19 5" />
+                                    <path d="m3 21 9-9" />
+                                    <path d="M12.2 6.2 11 5" />
+                                </svg>                
+                            </div>              
+                        </div>
+                        <div class="mistakeMessage mistakeMessagePassword"></div>
+                    </div>
+                    <div class="inputWrapper inputRepeatPasswordWrapper">
+                        <input type="text" placeholder="Repeat password" class="inputRepeatPassword" data-i18-placeholder="69">
+                        <div class="mistakeMessage mistakeMessageRepeatPassword"></div>
+                    </div>
+                    <button type="submit" class="submitRegistration" data-i18="59" disabled>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modalAuthorization_Background modal_background">
+        <div class="modalAuthorization modal">
+            <form class="form_Authorization">
+                <h2 class="header_Authorization" data-i18="58">Authorization</h2>
+                <div class="inputWrapper inputEmailWrapper">
+                    <input type="text" placeholder="Email" class="inputEmailAuthorization">
+                    <div class="mistakeMessage mistakeMessageEmailAuthorization"></div>
+                </div>
+                <div class="inputWrapper inputPasswordWrapper">
+                    <input type="text" placeholder="Password" class="inputPasswordAuthorization" data-i18-placeholder="68">
+                    <div class="mistakeMessage mistakeMessagePasswordAuthorization"></div>
+                </div>
+                <button type="submit" class="submitAuthorization" data-i18="59" disabled>Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="modalAccount_Background modal_background">
+        <div class="modalAccount modal">
+            <div class="cross_account">
+                <svg height="35" version="1.1" viewBox="0 0 25 25" width="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#000000" id="Cross-Cricle"><path d="M12.5,25 C19.4035594,25 25,19.4035594 25,12.5 C25,5.59644063 19.4035594,0 12.5,0 C5.59644063,0 0,5.59644063 0,12.5 C0,19.4035594 5.59644063,25 12.5,25 L12.5,25 Z M12.5,24 C18.8512746,24 24,18.8512746 24,12.5 C24,6.14872538 18.8512746,1 12.5,1 C6.14872538,1 1,6.14872538 1,12.5 C1,18.8512746 6.14872538,24 12.5,24 Z M13.2071068,12.5 L18.863961,6.84314575 L18.1568542,6.13603897 L12.5,11.7928932 L6.84314575,6.13603897 L6.13603897,6.84314575 L11.7928932,12.5 L6.13603897,18.1568542 L6.84314575,18.863961 L12.5,13.2071068 L18.1568542,18.863961 L18.863961,18.1568542 L13.2071068,12.5 L13.2071068,12.5 Z" id="Check-Circle"/></g></g>
+                </svg>
+            </div>
+            <div class="wrapper">
+                <h2 class="header"  data-i18="8">Account</h2>
+                <div class="data">
+                    <div><span data-i18="36">Name: </span><span class="account_name"></span></div>
+                    <div><span data-i18="61">Surname: </span><span class="account_surname"></span></div>
+                    <div><span data-i18="60">Patronymic: </span><span class="account_patronymic"></span></div>
+                    <div><span data-i18="62">Birthday: </span><span class="account_birthday"></span></div>
+                    <div><span data-i18="37">Number: </span><span class="account_number"></span></div>
+                    <div><span data-i18="38">Email: </span><span class="account_email"></span></div>
+                    <div><span data-i18="39">Password: </span><span class="account_password"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <div class="arrow arrowLeft">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+                <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15
+                -6.7 15-15-6.7-15-15-15z"/>
+                <path d="M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z"/>
+                <path d="M17 24h17v2H17z"/>
+            </svg>
+        </div>
+        <div class="arrow arrowRight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+                <path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 
+                15-15-6.7-15-15-15z"/>
+                <path d="M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z"/>
+                <path d="M16 24h17v2H16z"/>
+            </svg>
+        </div>
+    </div>
+    
+        <script type="module" src="../js/MainPage/index.js"></script>
+    </body>
+</html>
