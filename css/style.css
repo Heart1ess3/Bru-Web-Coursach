@@ -1719,9 +1719,26 @@ header {
 
 @media (max-width: 450px) {
   .tablets_text_title {
-      max-width: 300px;
+      max-width: 250px;
       width: 100%;
   }
+  .statements {
+    .container {
+      transform: translateX(-30px);
+        width: 280px;
+        .statement{
+          width: 100%;
+        }
+        .slider_img{
+          width: 100%;
+        }
+    }
+  }
+  .statements {
+    .container {
+        padding: 80px 40px;
+    }
+}
   .tablet_text {
       max-width: 292px;
       width: 100%;
@@ -1740,14 +1757,13 @@ header {
       max-width: 200px;
       margin: 0 auto;
   }
-
-  .catalog_first img {
-      width: 283px !important;
-  }
+  
 }
+
 .statements {
   .container {
       padding: 200px 48px;
+      
   }
   .slider {
       padding: 30px 0;
