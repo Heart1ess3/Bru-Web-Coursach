@@ -310,15 +310,19 @@ class ValidationRegistration {
         document.querySelector('.submitRegistration').disabled = true;
     }
 
-    changePage() {
-        document.querySelector('.logIn').classList.add('hidden');
-        document.querySelector('.sighIn').classList.add('hidden');
-
-        document.querySelector('.logout').classList.remove('hidden');
-
-        document.querySelectorAll('.open').forEach((elem) => {
-            elem.classList.remove('hidden');
-        });
+    changePage() { 
+        document.querySelector('.logIn').classList.add('hidden'); 
+        document.querySelector('.logIn_burger').classList.add('hidden'); 
+        document.querySelector('.sighIn').classList.add('hidden'); 
+        document.querySelector('.sighIn_burger').classList.add('hidden'); 
+ 
+        document.querySelector('.logout').classList.remove('hidden'); 
+        document.querySelector('.logout_burger').classList.remove('hidden'); 
+        document.querySelector('.pagination-section ').classList.remove('hidden'); 
+ 
+        document.querySelectorAll('.open').forEach((elem) => { 
+            elem.classList.remove('hidden'); 
+        }); 
     }
 }
 

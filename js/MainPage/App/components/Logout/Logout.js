@@ -22,7 +22,8 @@ class Logout {
         document.querySelector('.logIn_burger').classList.remove('hidden');
         document.querySelector('.sighIn').classList.remove('hidden');
         document.querySelector('.sighIn_burger').classList.remove('hidden');
-
+        
+        document.querySelector('.pagination-section ').classList.add('hidden');
         document.querySelector('.logout').classList.add('hidden');
         document.querySelector('.logout_burger').classList.add('hidden');
 
