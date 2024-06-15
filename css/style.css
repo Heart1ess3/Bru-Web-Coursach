@@ -1355,27 +1355,6 @@ header {
       color: white;
   }
 
-<<<<<<< Updated upstream
-                            width: 1280px;
-                            height: 884px;
-                            gap: 0px;
-                            border-radius: 60px 60px 0px 0px;
-                            opacity: 0px;
-                            background: black;
-                            margin: 0 auto;
-                          }      
-                          .footer{ 
-                            background: black;
-                          }
-                          .footer-label {
-                            color: #fff;
-                          }
-                          .footer-list {
-                            color: #fff;
-                          }
-                          
-.shop_trusted_text {
-=======
   .shop {
       width: 1280px;
       height: 884px;
@@ -1398,7 +1377,6 @@ header {
   .shop_trusted_text {
       color: #fff;
   }
->>>>>>> Stashed changes
 
   .shop_undertitle_text {
       color: #fff;
