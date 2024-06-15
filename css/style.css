@@ -1746,9 +1746,13 @@ header {
 @media (max-width: 400px) {
   .statements {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 10px;
 =======
 >>>>>>> a822148 (6)
+=======
+    margin-top: 10px;
+>>>>>>> 1ba9fbba8cd806aed8193ad7cdc9d91eecfe8c81
     display: flex;
     justify-content: center; /* Горизонтальное центрирование */
     align-items: center;    /* Вертикальное центрирование */
@@ -1756,10 +1760,14 @@ header {
 
     .container {
 <<<<<<< HEAD
+<<<<<<< HEAD
       transform: translateX(0px); /* Убираем смещение */
 =======
       transform: translateX(0); /* Убираем смещение */
 >>>>>>> a822148 (6)
+=======
+      transform: translateX(-10px); /* Убираем смещение */
+>>>>>>> 1ba9fbba8cd806aed8193ad7cdc9d91eecfe8c81
       margin: 0 auto;          /* Центрируем контейнер по горизонтали */
       display: block;          /* Исправляем свойство display */
       
