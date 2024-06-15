@@ -16,8 +16,8 @@ class App {
         const burgerMenu = new BurgerMenu();
         burgerMenu.init();
 
-        // const slider = new Slider();
-        // slider.init();
+         const slider = new Slider();
+         slider.init();
 
         const changeTheme = new ChangeTheme();
         changeTheme.init();
