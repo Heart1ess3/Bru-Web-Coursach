@@ -1744,13 +1744,30 @@ header {
   
 }
 @media (max-width: 400px) {
-  .statements {
+  .catalog_shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Центрируем по горизонтали */
+      justify-content: center; /* Центрируем по вертикали */
+      padding: 0 10px; /* Добавляем немного отступа по бокам */
+    }
+  
+    .catalog_first, .catalog_second, .catalog_third, .catalog_fourth {
+      width: 100%; /* Ширина 100% для всех элементов внутри */
+      margin: 10px 0; /* Отступы между блоками */
+    }
+  
+    .catalog_first_button {
+      width: 100%; /* Кнопки занимают всю ширину */
+      margin-top: 5px; /* Небольшой отступ сверху */
+    }
+    .statements {
     margin-top: 10px;
     display: flex;
     justify-content: center; /* Горизонтальное центрирование */
     align-items: center;    /* Вертикальное центрирование */
     height: 100vh;          /* Высота контейнера равна высоте окна браузера */
-
+      padding-bottom: 50px;
     .container {
       transform: translateX(0px); /* Убираем смещение */
       margin: 0 auto;          /* Центрируем контейнер по горизонтали */
@@ -1761,7 +1778,7 @@ header {
       }
     }
   }
-}
+  }
 .statements {
   .container {
       padding: 200px 48px;
