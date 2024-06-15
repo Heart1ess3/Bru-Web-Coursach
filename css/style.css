@@ -1656,6 +1656,14 @@ header {
   .intro {
       width: 100%;
   }
+  .statements {
+    .container {
+        max-width: 700px;
+        .slider_img{
+          max-width: 100%;
+        }
+    }
+}
   .intro_img img {
       /* max-width: 400px;
       width: 100%; */
@@ -1686,6 +1694,14 @@ header {
   .intro_text_title_h {
       font-size: 40px;
   }
+  .statements {
+    .container {
+        max-width: 300px;
+        .slider_img{
+          max-width: 100%;
+        }
+    }
+}
   .intro_text_title {
       width: 100%;
   }
@@ -1693,6 +1709,7 @@ header {
       width: 100%;
       margin-bottom: 30px;
   }
+  
   .footer_wrap_lists {
       flex-direction: column;
       align-items: start;
