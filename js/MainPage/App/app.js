@@ -16,8 +16,8 @@ class App {
         const burgerMenu = new BurgerMenu();
         burgerMenu.init();
 
-        const slider = new Slider();
-        slider.init();
+        // const slider = new Slider();
+        // slider.init();
 
         const changeTheme = new ChangeTheme();
         changeTheme.init();
@@ -41,18 +41,18 @@ class App {
         pagination.init();
         
         this.isLogined();
-        window.onload = () => {
-            const user = JSON.parse(customLocalStorage.get("user"));
-            if(user) {
-              console.log("windowOnLoad")
-                authorization.changePage();
-                //registration.changePage();
-                changeTheme.setTheme(user.theme);
-                translator.changeLang(user.lang);
+        // window.onload = () => {
+        //     const user = JSON.parse(customLocalStorage.get("user"));
+        //     if(user) {
+        //       console.log("windowOnLoad")
+        //         authorization.changePage();
+        //         //registration.changePage();
+        //         changeTheme.setTheme(user.theme);
+        //         translator.changeLang(user.lang);
         
-                customLocalStorage.set('user', JSON.stringify(user));
-            }
-        };
+        //         customLocalStorage.set('user', JSON.stringify(user));
+        //     }
+        // };
     }
    
     isLogined() {
@@ -65,6 +65,7 @@ class App {
 
             document.querySelector('.logout').classList.remove('hidden');
             document.querySelector('.logout_burger').classList.remove('hidden');
+            document.querySelector('.pagination-section ').classList.remove('hidden');
 
             document.querySelectorAll('.open').forEach((elem) => {
                 elem.classList.remove('hidden');

@@ -114,6 +114,7 @@ class Authorization {
 
         document.querySelector('.logout').classList.remove('hidden');
         document.querySelector('.logout_burger').classList.remove('hidden');
+        document.querySelector('.pagination-section ').classList.remove('hidden');
 
         document.querySelectorAll('.open').forEach((elem) => {
             elem.classList.remove('hidden');
