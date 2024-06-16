@@ -1546,7 +1546,23 @@ header {
   .intro_text_undertitle_h3 {
       color: #fff;
   }
-
+.statements {
+        .slide {
+            .statement {
+                color: #fff;
+            }
+            .author {
+                color: #fff;
+            }
+        }
+        .arrow {
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
   .header_link {
       color: #fff;
   }
