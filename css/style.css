@@ -548,31 +548,54 @@ header .changeLang:hover {
   height: 96px;
 }
 
-.button_shop_pet {
+.shop-pet-button {
   display: inline-block;
   width: 232px;
   height: 40px;
   background: #0e2d22;
   border-radius: 1000px;
   margin-top: 40px;
-  text-align: center;
-  text-decoration: none; /* Убираем подчеркивание для ссылки */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Центрируем текст по горизонтали */
+  line-height: 40px; /* Центрируем текст по вертикали */
 }
 
-.button_shop_pet_pic {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  font-family: "Segoe UI", sans-serif;
+.shop-pet-button-text {
+  background-color: transparent;
+  border-color: transparent;
+  width: 232px;
+  height: 40px;
+  font-family: "Segoe UI";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px; /* Совпадает с высотой кнопки для вертикального центрирования */
   color: #cbddbf;
-  background-color: transparent;
-  border: none; /* Убираем границы */
-  cursor: pointer; /* Добавляем указатель для кнопки */
-  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.shop-pet-button:hover {
+  background-color: #061812;
+}
+
+.shop-pet-button-text:hover {
+  color: #000;
+}
+
+.shop-pet-button:active {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .intro_wrap {
