@@ -1062,6 +1062,8 @@ header .changeLang:hover {
 }
 /* Footer styles start*/
 
+/* Footer styles start*/
+
 .footer {
   width: 1280px;
   height: 455px;
@@ -1116,11 +1118,11 @@ header .changeLang:hover {
   margin-bottom: 38px;
 }
 .footer-list1-3 {
-  width: 124px;
+  width: 134px;
   height: 32px;
 }
 .footer-list1-4 {
-  width: 33px;
+  width: 80px;
   height: 32px;
 }
 .footer-list1-5 {
@@ -1136,7 +1138,7 @@ header .changeLang:hover {
   margin-bottom: 6px;
 }
 .footer-list2-1 {
-  width: 98px;
+  width: 103px;
   height: 20px;
   margin-bottom: 12px;
 }
@@ -1197,6 +1199,12 @@ header .changeLang:hover {
 .footer_down_right {
   margin-top: 121px;
   margin-left: 481px;
+}
+
+.footer-list:hover {
+  color: #0e2d22;
+  font-weight: 700;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 /* Footer styles end*/
 
