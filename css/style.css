@@ -548,19 +548,16 @@ header .changeLang:hover {
   height: 96px;
 }
 
-.shop-pet-button {
+.button_shop_pet {
   display: inline-block;
   width: 232px;
   height: 40px;
   background: #0e2d22;
   border-radius: 1000px;
   margin-top: 40px;
-  cursor: pointer;
-  text-align: center; /* Центрируем текст по горизонтали */
-  line-height: 40px; /* Центрируем текст по вертикали */
 }
 
-.shop-pet-button-text {
+.button_shop_pet_pic {
   background-color: transparent;
   border-color: transparent;
   width: 232px;
@@ -569,10 +566,10 @@ header .changeLang:hover {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
+  text-align: center;
   color: #cbddbf;
-  transition: color 0.3s ease;
 }
-
 .intro_wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
