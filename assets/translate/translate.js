@@ -155,7 +155,7 @@ export const translate = {
         47: "Join us in protecting and aiding these iconic animals. Your sponsorship will help us drive critical conservation efforts and ensure a healthy future for koalas.",
         48: "Make a Difference with Your Support",
         49: "Your sponsorship will directly impact our work, enabling us to fund vital research and habitat restoration projects.Provide emergency care and rehabilitation for injured koalas.Educate the public about koala conservation and threats.",
-        50: "Become a Champion for Koalas",
+        50: "Become better for animals.",
         51: "Your sponsorship will help us build a brighter future for koalas. Together, we can make a lasting impact on their survival.",
         52: "Join the Movement",
         53: "Learn more about our work and how you can get involved. Every contribution counts! Visit our website to explore sponsorship opportunities and make a difference.",
