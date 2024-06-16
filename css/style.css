@@ -556,7 +556,6 @@ header .changeLang:hover {
   border-radius: 1000px;
   margin-top: 40px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   text-align: center; /* Центрируем текст по горизонтали */
   line-height: 40px; /* Центрируем текст по вертикали */
 }
@@ -572,30 +571,6 @@ header .changeLang:hover {
   font-size: 16px;
   color: #cbddbf;
   transition: color 0.3s ease;
-}
-
-.shop-pet-button:hover {
-  background-color: #061812;
-}
-
-.shop-pet-button-text:hover {
-  color: #000;
-}
-
-.shop-pet-button:active {
-  animation: pulse 0.5s ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .intro_wrap {
