@@ -1,7 +1,131 @@
+/* Общие стили */
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+/* Стили для header */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+header .brex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .brex .brexLogo {
+  padding: 5px;
+}
+
+header .navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+header .navigation ul a {
+  font-size: 1.4rem;
+  position: relative;
+  transition: color 300ms;
+}
+
+/* Добавляем анимацию наведения для ссылок */
+header .navigation ul a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #403f3d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+header .navigation ul a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+header .navigation ul a:hover {
+  color: #665f55;
+}
+
+header .authorization {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .authorization span {
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 300ms;
+}
+
+/* Добавляем анимацию наведения для кнопок авторизации */
+header .authorization span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #665f55;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+header .authorization span:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+header .authorization span:hover {
+  color: #403f3d;
+}
+
+header .changeTheme {
+  cursor: pointer;
+  transition: transform 300ms, color 300ms;
+}
+
+header .changeLang {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 300ms, color 300ms;
+}
+
+/* Добавляем эффекты для смены темы и языка */
+header .changeTheme:hover,
+header .changeLang:hover {
+  transform: scale(1.1);
+  color: #665f55;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .right .contact {
+  height: 36px;
+  padding: 0 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: 300ms all;
+}
+
 header .right .burger {
   display: none;
   width: 44px;
@@ -50,7 +174,6 @@ header .burger_menu {
 header .burger_menu.opened {
   left: 0;
 }
-
 header .burger_menu .burger_menu_links ul {
   display: flex;
   flex-direction: column;
@@ -68,6 +191,25 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   line-height: 125%;
   text-decoration: none;
 }
+
+/* Добавляем анимацию появления для меню */
+header .burger_menu .burger_menu_links ul .nav_items_text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+header .burger_menu.opened .burger_menu_links ul .nav_items_text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Эффект наведения для пунктов меню */
+header .burger_menu .burger_menu_links ul .nav_items_text:hover {
+  color: #665f55;
+  text-decoration: underline;
+}
+
 .burger_menu {
   background: #fff;
   left: 100%;
@@ -82,143 +224,218 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   transition: 500ms all;
   display: flex;
   z-index: 1;
-  &.opened {
-      left: 0;
-  }
-  .burger_menu_links {
-      ul {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 40px;
-          li {
-              list-style: none;
-          }
-          .nav_items_text {
-              font-size: 3.2rem;
-              font-weight: 600;
-              line-height: 125%;
-              text-decoration: none;
-          }
-      }
+}
+
+.burger_menu.opened {
+  left: 0;
+}
+
+.burger_menu .burger_menu_links {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    li {
+      list-style: none;
+    }
+    .nav_items_text {
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 125%;
+      text-decoration: none;
+    }
   }
 }
+
 header {
   .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
   }
   .brex {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      .brexLogo {
-          padding: 5px;
-      }
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .brexLogo {
+      padding: 5px;
+    }
   }
   .navigation {
-      ul {
-          display: flex;
-          list-style: none;
-          gap: 15px;
-          a {
-              font-size: 1.4rem;
-          }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      a {
+        font-size: 1.4rem;
+        position: relative;
+        transition: color 300ms;
       }
+    }
   }
   .authorization {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      span {
-          font-size: 1.4rem;
-          cursor: pointer;
-      }
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    span {
+      font-size: 1.4rem;
+      cursor: pointer;
+      position: relative;
+      transition: color 300ms;
+    }
   }
   .changeTheme {
-      cursor: pointer;
+    cursor: pointer;
+    transition: transform 300ms, color 300ms;
   }
   .changeLang {
-      cursor: pointer;
-      font-size: 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 300ms, color 300ms;
   }
   .right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      .contact {
-          height: 36px;
-          padding: 0 30px;
-          border-radius: 10px;
-          color: #fff;
-          font-size: 1.4rem;
-          transition: 300ms all;
-      }
-      .burger {
-          display: none;
-          width: 44px;
-          height: 44px;
-          z-index: 2;
-          transition: 500ms all;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #665f55;
-          border-radius: 50%;
-          &.burgeroff {
-              .burger_line:first-child {
-                  transform: rotate(-45deg) translate(-3px, 3px);
-              }
-              .burger_line:last-child {
-                  transform: rotate(45deg) translate(-3px, -3px);
-              }
-          }
-          .burger_line {
-              width: 16px;
-              height: 2px;
-              margin: 3px 0;
-              background-color: #403f3d;
-              transition: 500ms all;
-          }
-      }
-  }
-  .burger_menu {
-      background: #fff;
-      left: 100%;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      padding: 80px 40px 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .contact {
+      height: 36px;
+      padding: 0 30px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.4rem;
+      transition: 300ms all;
+    }
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      z-index: 2;
+      transition: 500ms all;
       flex-direction: column;
       align-items: center;
-      gap: 100px;
-      transition: 500ms all;
-      display: flex;
-      z-index: 1;
-      &.opened {
-          left: 0;
+      justify-content: center;
+      border: 1px solid #665f55;
+      border-radius: 50%;
+      &.burgeroff {
+        .burger_line:first-child {
+          transform: rotate(-45deg) translate(-3px, 3px);
+        }
+        .burger_line:last-child {
+          transform: rotate(45deg) translate(-3px, -3px);
+        }
       }
-      .burger_menu_links {
-          ul {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              gap: 40px;
-              li {
-                  list-style: none;
-              }
-              .nav_items_text {
-                  font-size: 3.2rem;
-                  font-weight: 600;
-                  line-height: 125%;
-                  text-decoration: none;
-              }
-          }
+      .burger_line {
+        width: 16px;
+        height: 2px;
+        margin: 3px 0;
+        background-color: #403f3d;
+        transition: 500ms all;
       }
+    }
   }
+  .burger_menu {
+    background: #fff;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    padding: 80px 40px 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    transition: 500ms all;
+    display: flex;
+    z-index: 1;
+    &.opened {
+        left: 0;
+    }
+    .burger_menu_links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            li {
+                list-style: none;
+            }
+            .nav_items_text {
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 125%;
+                text-decoration: none;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 300ms, transform 300ms;
+            }
+        }
+    }
+    &.opened .burger_menu_links ul .nav_items_text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .burger_menu_links ul .nav_items_text:hover {
+        color: #665f55;
+        text-decoration: underline;
+    }
+}
+
+/* Повторяем те же стили для Sass/SCSS */
+.burger_menu {
+    background: #fff;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    padding: 80px 40px 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    transition: 500ms all;
+    display: flex;
+    z-index: 1;
+    &.opened {
+        left: 0;
+    }
+    .burger_menu_links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            li {
+                list-style: none;
+            }
+            .nav_items_text {
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 125%;
+                text-decoration: none;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 300ms, transform 300ms;
+            }
+        }
+    }
+    &.opened .burger_menu_links ul .nav_items_text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .burger_menu_links ul .nav_items_text:hover {
+        color: #665f55;
+        text-decoration: underline;
+    }
+}
+
+/* Стили для анимации кнопок смены темы и языка */
+header .changeTheme:hover,
+header .changeLang:hover {
+    transform: scale(1.1);
+    color: #665f55;
+}
 }
 
 /* Header styles start*/
