@@ -1545,6 +1545,13 @@ header {
   .intro_text_undertitle_h3 {
       color: #fff;
   }
+  .button_shop_pet {
+  background: white;
+}
+
+.button_shop_pet_pic {
+  color: black;
+}
 .statements {
         .slide {
             .statement {
